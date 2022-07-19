@@ -13,6 +13,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+
 </head>
 
 <body>
@@ -476,10 +477,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/js/main.js"></script>
     <script>
-    
-        $(window).load(function () {
-            $('body').sakura();
-        });
+     
         AOS.init();
 
         var mapContainer = document.querySelector('.map'), // 지도를 표시할 div 
@@ -515,7 +513,8 @@
                 }
             });
         }
-        function copyToClipboard(val) {
+
+         function copyToClipboard(val) {
             const t = document.createElement("textarea");
             document.body.appendChild(t);
             t.value = val;
